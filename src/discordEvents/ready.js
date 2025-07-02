@@ -53,24 +53,10 @@ module.exports = {
             client.log(client.intlGet(null, 'warningCap'), client.intlGet(null, 'ignoreSetAvatar'));
         }
 
-        const activities = [
-            { name: 'Hosted By NeonHost.Shop', type: Discord.ActivityType.Listening },
-            { name: '/help', type: Discord.ActivityType.Listening }
-        ];
-        let activityIndex = 0;
-
         client.user.setPresence({
-            activities: [activities[activityIndex]],
+            activities: [{ name: '/help', type: Discord.ActivityType.Listening }],
             status: 'online'
         });
-
-        setInterval(() => {
-            activityIndex = (activityIndex + 1) % activities.length;
-            client.user.setPresence({
-                activities: [activities[activityIndex]],
-                status: 'online'
-            });
-        }, 15000); // Change every 15 seconds
 
         client.uptimeBot = new Date();
 
