@@ -114,18 +114,18 @@ module.exports = {
                     Client.client.intlGet(guildId, 'notShowingCap') : trademark}`,
                 options: [
                     {
-                        label: 'R++ By NeonHost.Shop',
-                        description: Client.client.intlGet(guildId, 'trademarkShownBeforeMessage', {
-                            trademark: 'R++ By NeonHost.Shop'
-                        }),
-                        value: 'R++ By NeonHost.Shop'
-                    },
-                    {
                         label: 'rustplusplus',
                         description: Client.client.intlGet(guildId, 'trademarkShownBeforeMessage', {
                             trademark: 'rustplusplus'
                         }),
                         value: 'rustplusplus'
+                    },
+                    {
+                        label: 'Rust++',
+                        description: Client.client.intlGet(guildId, 'trademarkShownBeforeMessage', {
+                            trademark: 'Rust++'
+                        }),
+                        value: 'Rust++'
                     },
                     {
                         label: 'R++',
